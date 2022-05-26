@@ -1,15 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./pages/app/App";
+import reportWebVitals from "./reportWebVitals";
+import { LocaleProvider } from "./context/LocaleContext";
+import ToolbarContent from "./pages/toolbar/ToolbarContent";
+import Shell from "./components/Shell";
+
+// TODO: make locale dinamic.
+const locale = "de-DE";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <LocaleProvider locale={locale}>
+      <Shell toolbarContent={ToolbarContent()}>
+        <App />
+      </Shell>
+    </LocaleProvider>
   </React.StrictMode>
 );
 
