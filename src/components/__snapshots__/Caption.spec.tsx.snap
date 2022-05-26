@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Caption WHEN have text content 1`] = `
+<div>
+  <div
+    class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-bjfanr-MuiTypography-root"
+  >
+    Test
+  </div>
+</div>
+`;
