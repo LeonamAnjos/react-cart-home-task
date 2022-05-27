@@ -1,7 +1,10 @@
 import { CartItem } from "../structures/cart.structures";
 
-const totalValue = (items: CartItem[]): number => {
-  return items.reduce((sum: number, item: CartItem) => sum + item.price, 0);
+const totalValue = (items: Pick<CartItem, "price">[]): number => {
+  return items.reduce(
+    (sum: number, item: Pick<CartItem, "price">) => sum + item.price,
+    0
+  );
 };
 
 const firstLetter = (str: string): string => {
