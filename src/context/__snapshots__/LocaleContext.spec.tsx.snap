@@ -1,3 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LocaleContext WHEN rendered 1`] = `<div />`;
+exports[`LocaleContext WHEN rendered 1`] = `
+<div>
+  <p>
+    de-DE
+  </p>
+  <button
+    data-testid="test-button"
+  >
+    ChangeLocale
+  </button>
+</div>
+`;
+
+exports[`LocaleContext WHEN rendered 2`] = `
+<div>
+  <p>
+    en-US
+  </p>
+  <button
+    data-testid="test-button"
+  >
+    ChangeLocale
+  </button>
+</div>
+`;
