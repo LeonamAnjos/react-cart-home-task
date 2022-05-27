@@ -10,6 +10,7 @@ const AddToCartButton = ({ onClick }: AddToCartButtonProps) => {
     <ElementButton
       variant="contained"
       style={{ marginLeft: "Auto" }}
+      data-testid="add-to-cart-button"
       endIcon={<AddShoppingCart />}
       onClick={onClick}
     >

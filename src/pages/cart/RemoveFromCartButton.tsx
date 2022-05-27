@@ -11,6 +11,7 @@ const RemoveFromCartButton = ({ onClick }: RemoveFromCartButtonProps) => {
       variant="contained"
       color="secondary"
       style={{ marginLeft: "Auto" }}
+      data-testid="remove-from-cart-button"
       endIcon={<RemoveShoppingCart />}
       onClick={onClick}
     >
