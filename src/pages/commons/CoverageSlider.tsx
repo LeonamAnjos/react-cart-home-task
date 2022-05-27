@@ -3,7 +3,7 @@ import Slider from "@mui/material/Slider";
 
 const stepSlider = 10;
 
-type ProductCardDetailsProps = {
+export type CoverageSliderProps = {
   initialCoverage?: number | undefined;
   minCoverage: number;
   maxCoverage: number;
@@ -15,7 +15,7 @@ const CoverageSlider = ({
   minCoverage,
   maxCoverage,
   onCoverageChange,
-}: ProductCardDetailsProps) => {
+}: CoverageSliderProps) => {
   const [coverage, setCoverage] = React.useState<number>(
     initialCoverage ?? maxCoverage
   );
@@ -35,6 +35,7 @@ const CoverageSlider = ({
       step={stepSlider}
       valueLabelDisplay="auto"
       onChange={handleChange}
+      data-testid="coverage-slider"
     />
   );
 };
