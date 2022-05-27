@@ -1,0 +1,35 @@
+{
+  "data": {
+    "products": [
+      {
+        "id": 1,
+        "maxCoverage": 3000,
+        "minCoverage": 0,
+        "name": "Bike",
+        "risk": 0.3
+      },
+      {
+        "id": 2,
+        "maxCoverage": 10000,
+        "minCoverage": 500,
+        "name": "Jewelry",
+        "risk": 0.05
+      },
+      {
+        "id": 3,
+        "maxCoverage": 6000,
+        "minCoverage": 500,
+        "name": "Electronics",
+        "risk": 0.35
+      },
+      {
+        "id": 4,
+        "maxCoverage": 20000,
+        "minCoverage": 0,
+        "name": "Sports Equipment",
+        "risk": 0.3
+      }
+    ]
+  },
+  "error": {}
+}

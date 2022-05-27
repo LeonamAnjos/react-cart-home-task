@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CoveragePriceCaption /> SHOULD render 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-1k7sk4d-MuiGrid-root"
+    >
+      <div
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-bjfanr-MuiTypography-root"
+      >
+        Coverage: $123.45
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-1k7sk4d-MuiGrid-root"
+    >
+      <div
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-bjfanr-MuiTypography-root"
+      >
+        Price: $12.34
+      </div>
+    </div>
+  </div>
+</div>
+`;

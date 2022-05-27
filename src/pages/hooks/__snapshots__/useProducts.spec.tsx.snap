@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useProducts SHOULD fetch 1`] = `
+Object {
+  "all": Array [
+    Array [],
+    Array [
+      Object {
+        "id": 1,
+        "maxCoverage": 3000,
+        "minCoverage": 0,
+        "name": "Bike",
+        "risk": 0.3,
+      },
+      Object {
+        "id": 2,
+        "maxCoverage": 10000,
+        "minCoverage": 500,
+        "name": "Jewelry",
+        "risk": 0.05,
+      },
+    ],
+  ],
+  "current": Array [
+    Object {
+      "id": 1,
+      "maxCoverage": 3000,
+      "minCoverage": 0,
+      "name": "Bike",
+      "risk": 0.3,
+    },
+    Object {
+      "id": 2,
+      "maxCoverage": 10000,
+      "minCoverage": 500,
+      "name": "Jewelry",
+      "risk": 0.05,
+    },
+  ],
+  "error": undefined,
+}
+`;

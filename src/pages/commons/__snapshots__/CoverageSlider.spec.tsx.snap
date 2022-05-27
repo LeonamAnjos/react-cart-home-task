@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CoverageSlider /> SHOULD notify onCoverageChange event 1`] = `
+<div>
+  <span
+    class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-187mznn-MuiSlider-root"
+    data-testid="coverage-slider"
+  >
+    <span
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+    />
+    <span
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      style="left: 0%; width: 100%;"
+    />
+    <span
+      class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb Mui-active css-eg0mwd-MuiSlider-thumb"
+      data-index="0"
+      style="left: 100%;"
+    >
+      <input
+        aria-orientation="horizontal"
+        aria-valuemax="90"
+        aria-valuemin="10"
+        aria-valuenow="90"
+        data-index="0"
+        max="90"
+        min="10"
+        step="10"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="90"
+      />
+      <span
+        aria-hidden="true"
+        class="MuiSlider-valueLabelOpen MuiSlider-valueLabel css-1kz0hui-MuiSlider-valueLabel"
+      >
+        <span
+          class="MuiSlider-valueLabelCircle"
+        >
+          <span
+            class="MuiSlider-valueLabelLabel"
+          >
+            90
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`<CoverageSlider /> SHOULD notify onCoverageChange event 2`] = `
+<div>
+  <span
+    class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-187mznn-MuiSlider-root"
+    data-testid="coverage-slider"
+  >
+    <span
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+    />
+    <span
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      style="left: 0%; width: 0%;"
+    />
+    <span
+      class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb Mui-active css-eg0mwd-MuiSlider-thumb"
+      data-index="0"
+      style="left: 0%;"
+    >
+      <input
+        aria-orientation="horizontal"
+        aria-valuemax="90"
+        aria-valuemin="10"
+        aria-valuenow="10"
+        data-index="0"
+        max="90"
+        min="10"
+        step="10"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="10"
+      />
+      <span
+        aria-hidden="true"
+        class="MuiSlider-valueLabelOpen MuiSlider-valueLabel css-1kz0hui-MuiSlider-valueLabel"
+      >
+        <span
+          class="MuiSlider-valueLabelCircle"
+        >
+          <span
+            class="MuiSlider-valueLabelLabel"
+          >
+            10
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`<CoverageSlider /> SHOULD render 1`] = `
+<div>
+  <span
+    class="MuiSlider-colorPrimary MuiSlider-sizeMedium MuiSlider-root css-187mznn-MuiSlider-root"
+    data-testid="coverage-slider"
+  >
+    <span
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+    />
+    <span
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      style="left: 0%; width: 50%;"
+    />
+    <span
+      class="MuiSlider-thumbColorPrimary MuiSlider-thumbSizeMedium MuiSlider-thumb css-eg0mwd-MuiSlider-thumb"
+      data-index="0"
+      style="left: 50%;"
+    >
+      <input
+        aria-orientation="horizontal"
+        aria-valuemax="90"
+        aria-valuemin="10"
+        aria-valuenow="50"
+        data-index="0"
+        max="90"
+        min="10"
+        step="10"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="50"
+      />
+      <span
+        aria-hidden="true"
+        class="MuiSlider-valueLabel css-1kz0hui-MuiSlider-valueLabel"
+      >
+        <span
+          class="MuiSlider-valueLabelCircle"
+        >
+          <span
+            class="MuiSlider-valueLabelLabel"
+          >
+            50
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
