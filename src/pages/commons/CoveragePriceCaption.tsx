@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import LocaleContext from "../../context/LocaleContext";
 import Caption from "../../components/Caption";
 
-type CoveragePriceCaptionProps = {
+export type CoveragePriceCaptionProps = {
   coverage: number;
   price: number;
 };
