@@ -9,7 +9,7 @@ import LocaleContext from "../../context/LocaleContext";
 import useProducts from "../hooks/useProducts";
 
 // TODO: move it to proper configuration
-const url = "../../config/products.json";
+const url = "/products.json";
 
 const App = () => {
   const products = useProducts({ url });

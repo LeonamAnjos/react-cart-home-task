@@ -13,7 +13,7 @@ export const useCartStore = create<CartState>((set) => ({
     set((state: CartState) => ({
       ...state,
       items: [
-        ...state.items.filter(({ product }) => product.id != item.product.id),
+        ...state.items.filter(({ product }) => product.id !== item.product.id),
         item,
       ],
     }));
