@@ -23,13 +23,13 @@ const App = () => {
     <Grid container spacing={2}>
       <Grid item xs={6}>
         <Caption variant="h6">{"Products"}</Caption>
-        <ProductList products={products}></ProductList>
+        <ProductList products={products} />
       </Grid>
       <Grid item xs={6}>
         <Caption variant="h6">{"Cart"}</Caption>
         {items.length > 0 ? (
           <>
-            <CartItemList items={items}></CartItemList>
+            <CartItemList items={items} />
             <Caption variant="h6">{`Total: ${currencyFormat(total)}`}</Caption>
           </>
         ) : (

@@ -8,6 +8,7 @@ import AddToCartButton from "./AddToCartButton";
 import { useCartStore } from "../stores/useCartStore";
 import { firstLetter } from "../utils/utils";
 import CoveragePriceCaption from "../commons/CoveragePriceCaption";
+import { CartItem } from "../structures/cart.structures";
 
 type ProductDetailsProps = {
   product: Product;
@@ -20,12 +21,16 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
   const [coverage, setCoverage] = useState(product.maxCoverage);
   const [price, setPrice] = useState(calcPrice(coverage, product.risk));
 
-  const { addItem } = useCartStore();
+  const { items, addItem } = useCartStore();
   const { currencyFormat } = useContext(LocaleContext);
 
   const handleCoverageChange = (coverage: number): void => {
     setCoverage(coverage);
     setPrice(calcPrice(coverage, product.risk));
+  };
+
+  const isInCartList = (productId: number): boolean => {
+    return !!items.find((item: CartItem) => item.product.id === productId);
   };
 
   const handleAddToCartClick = (): void => {
@@ -40,7 +45,12 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
         currencyFormat(product.minCoverage),
         currencyFormat(product.maxCoverage)
       )}
-      actions={<AddToCartButton onClick={handleAddToCartClick} />}
+      actions={
+        <AddToCartButton
+          onClick={handleAddToCartClick}
+          disabled={isInCartList(product.id)}
+        />
+      }
     >
       <CoverageSlider
         minCoverage={product.minCoverage}
