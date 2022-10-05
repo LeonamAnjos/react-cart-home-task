@@ -1,4 +1,4 @@
-# Element - Insurance Cart
+# Insurance Cart - Home Task
 
 ## How to Install
 
